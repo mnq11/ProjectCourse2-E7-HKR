@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.net.URL?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal"
+            fx:controller="se.hkr.e7.controller.DoctorDashboardController">
+    <Button fx:id="viewPatientButton" layoutX="110.0" layoutY="138.0" mnemonicParsing="false" prefHeight="38.0"
+            prefWidth="131.0" text="View patient"/>
+    <Button fx:id="addPatientButton" layoutX="349.0" layoutY="138.0" mnemonicParsing="false" prefHeight="38.0"
+            prefWidth="131.0" text="Add patient"/>
+    <Button fx:id="addResultButton" layoutX="110.0" layoutY="253.0" mnemonicParsing="false" prefHeight="38.0"
+            prefWidth="131.0" text="Add result"/>
+    <Button fx:id="viewResultsButton" layoutX="349.0" layoutY="253.0" mnemonicParsing="false" prefHeight="38.0"
+            prefWidth="131.0" text="View results"/>
+    <Button fx:id="edit" layoutX="449.0" layoutY="20.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0"
+            text="update my info"/>
+    <fx:include source="../template/LogoutButton.fxml"/>
+    <ImageView fitHeight="56.0" fitWidth="62.0" layoutX="148.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@images/view-patients.png"/>
+    </ImageView>
+    <ImageView fitHeight="56.0" fitWidth="62.0" layoutX="387.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@images/add-patient.png"/>
+    </ImageView>
+    <ImageView fitHeight="56.0" fitWidth="62.0" layoutX="148.0" layoutY="191.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@images/add-result.png"/>
+    </ImageView>
+    <ImageView fitHeight="56.0" fitWidth="62.0" layoutX="387.0" layoutY="191.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@images/test-result.png"/>
+    </ImageView>
+    <stylesheets>
+        <URL value="@Style.css"/>
+    </stylesheets>
+</AnchorPane>

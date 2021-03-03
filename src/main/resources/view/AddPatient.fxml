@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="se.hkr.e7.controller.AddPatientController">
+    <Label alignment="CENTER" layoutX="213.0" layoutY="24.0" prefHeight="25.0" prefWidth="175.0" text="Add patient">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="ssnTextField" layoutX="109.0" layoutY="84.0" prefHeight="25.0" prefWidth="175.0"
+               promptText="SSN"/>
+    <TextField fx:id="nameTextField" layoutX="388.0" layoutY="84.0" prefHeight="25.0" prefWidth="175.0"
+               promptText="Name"/>
+    <TextField fx:id="addressTextField" layoutX="109.0" layoutY="152.0" prefHeight="25.0" prefWidth="175.0"
+               promptText="Address"/>
+    <TextField fx:id="phoneTextField" layoutX="388.0" layoutY="150.0" prefHeight="25.0" prefWidth="175.0"
+               promptText="Phone"/>
+    <TextField fx:id="emailTextField" layoutX="109.0" layoutY="220.0" prefHeight="25.0" prefWidth="175.0"
+               promptText="email"/>
+    <Button fx:id="addButton" layoutX="380.0" layoutY="351.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0"
+            text="Add"/>
+    <fx:include source="../template/LogoutButton.fxml"/>
+    <ImageView fitHeight="54.0" fitWidth="62.0" layoutX="41.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@images/ssn.png"/>
+        </image>
+    </ImageView>
+    <ImageView fitHeight="54.0" fitWidth="62.0" layoutX="322.0" layoutY="138.0" pickOnBounds="true"
+               preserveRatio="true">
+        <image>
+            <Image url="@images/phone.png"/>
+        </image>
+    </ImageView>
+   <ImageView fitHeight="54.0" fitWidth="62.0" layoutX="317.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/user.png" />
+      </image>
+   </ImageView>
+    <ImageView fitHeight="54.0" fitWidth="62.0" layoutX="41.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@images/address.png"/>
+        </image>
+    </ImageView>
+    <ImageView fitHeight="54.0" fitWidth="62.0" layoutX="41.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@images/email.png"/>
+        </image>
+    </ImageView>
+    <stylesheets>
+        <URL value="@../view/Style.css" />
+    </stylesheets>
+</AnchorPane>
